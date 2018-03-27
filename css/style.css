@@ -2,10 +2,194 @@
   box-sizing: border-box;
 }
 
-.map {
+div {
+  width: 375px;
+}
 
+body {
+  background-image: url(../images/MAP.png);
+  background-repeat: no-repeat;
+  max-width: 375px;
+}
+
+h1 {
+  font-family: system-ui, sans-serif;
+  font-size: 34px;
+  line-height: 22px;
+  color: #FFFFFF;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  float: left;
+}
+
+h2 {
+  font-family: system-ui, sans-serif;
+  font-size: 17px;
+  font-weight: lighter;
+  line-height: 22px;
+  color: #FFFFFF;
+  padding-left: 10px;
+  padding-top: 12px;
+  float: left;
+  display: inline-block;
+}
+
+.arrow {
+  height: 25px;
+  width: 25px;
+  padding-left: 8px;
+  padding-top: 10px;
+  float: left;
+}
+
+.search {
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+  padding-top: 10px;
+  float: right;
+}
+
+.container {
+  max-width: 375px;
+  max-height: 667px;
 }
 
 .statusbar {
-  
+  width: 375px;
+}
+
+.header {
+  width: 375px;
+  height: 94px;
+  background-color: #333333;
+  opacity: 50%;
+}
+
+.listingbackground {
+  background-color: #333333;
+  opacity: 75%;
+  width: 375px;
+  height: 290px;
+  margin-top: 315px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/*this is for the bus info content: icon, number, direction, destination, time, etc.*/
+li.businfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+/*uneven columns for the bus information to display*/
+.column {
+  float: left;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 94px; /*height of the individual listings*/
+}
+
+.left {
+  width: 30%;
+  margin-bottom: 18px;
+}
+
+.right {
+  width: 30%;
+  padding-top: 25px;
+}
+
+.center {
+  width: 40%;
+  padding-top: 25px;
+}
+
+/*clear floats after the columns*/
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+ul{
+  list-style-type: none;
+  width: 375px;
+}
+
+.busicon {
+  height: 75px;
+  width: auto;
+  position: relative;
+  margin-top: 10px;
+  margin-left: 8px;
+  margin-right: 12px;
+  float: center;
+  display: inline-block;
+}
+
+/*numbers that appear over the bus icon*/
+.busnumber {
+  font-family: system-ui, sans-serif;
+  font-size: 36px;
+  color: #333333;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*for late/rerouted/out of service buses*/
+.fail {
+  font-family: system-ui, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFB2B2;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-flex;
+  width: auto;
+}
+
+.direction {
+  font-family: system-ui, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #A7DCEE;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-flex;
+  width: inherit;
+}
+
+.destination {
+  font-family: system-ui, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: lighter;
+  color: #FFFFFF;
+  position: relative;
+  display: inline-flex;
+  text-align: left;
+  width: auto;
+}
+
+.time {
+  font-family: system-ui, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: lighter;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  position: relative;
+  display: inline-flex;
+  width: inherit;
 }
