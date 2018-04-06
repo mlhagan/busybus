@@ -10,10 +10,10 @@ body {
   background-image: url(../images/MAP.png);
   background-repeat: no-repeat;
   max-width: 375px;
+  font-family: system-ui, sans-serif;
 }
 
 h1 {
-  font-family: system-ui, sans-serif;
   font-size: 34px;
   line-height: 22px;
   color: #FFFFFF;
@@ -24,7 +24,6 @@ h1 {
 }
 
 h2 {
-  font-family: system-ui, sans-serif;
   font-size: 17px;
   font-weight: lighter;
   line-height: 22px;
@@ -130,7 +129,6 @@ ul{
   margin-top: 10px;
   margin-left: 8px;
   margin-right: 12px;
-  float: center;
   display: inline-block;
 }
 
