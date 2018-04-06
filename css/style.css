@@ -88,7 +88,7 @@ li.businfo {
 }
 
 /*uneven columns for the bus information to display*/
-.column {
+li.column {
   float: left;
   padding-right: 15px;
   padding-top: 10px;
@@ -96,28 +96,27 @@ li.businfo {
   height: 94px; /*height of the individual listings*/
 }
 
-.left {
+li.left {
   width: 30%;
   margin-bottom: 18px;
 }
 
-.right {
-  width: 30%;
+li.right {
+  width: 25%;
   padding-top: 25px;
 }
 
-.center {
-  width: 40%;
+li.center {
+  width: 45%;
   padding-top: 25px;
 }
 
 /*clear floats after the columns*/
-.row:after {
+ul.row:after {
   content: "";
   display: table;
   clear: both;
 }
-
 
 ul{
   list-style-type: none;
@@ -172,24 +171,24 @@ ul{
 
 .destination {
   font-family: system-ui, sans-serif;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 22px;
   font-weight: lighter;
   color: #FFFFFF;
   position: relative;
-  display: inline-flex;
+  display: block;
   text-align: left;
   width: auto;
 }
 
 .time {
   font-family: system-ui, sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 22px;
   font-weight: lighter;
   text-transform: capitalize;
   color: #FFFFFF;
   position: relative;
   display: inline-flex;
-  width: inherit;
+  width: auto;
 }
